@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
@@ -19,5 +19,114 @@
       Автокаскад - защитите свой автомобиль с помощью надежного навеса!
     </title>
   </head>
-  <body></body>
+  <body class="body">
+    <header class="header">
+      <nav class="header__nav">
+        <a href="#" class="header__nav-logo">
+          <img
+            src="<%=require('./images/logotype.svg')%>"
+            alt="Логотип компании"
+            class="header__nav-logo-img"
+          />
+        </a>
+        <ul class="header__nav-items">
+          <a href="" class="header__nav-item-link">
+            <li class="header__nav-item">О компании</li>
+          </a>
+          <a href="" class="header__nav-item-link">
+            <li class="header__nav-item">Галерея работ</li>
+          </a>
+          <a href="" class="header__nav-item-link">
+            <li class="header__nav-item">Отзывы</li>
+          </a>
+          <a href="" class="header__nav-item-link">
+            <li class="header__nav-item">Контакты</li>
+          </a>
+        </ul>
+        <div class="header__nav-contact">
+          <a href="tel:+79991234567" class="header__nav-contact-phone">
+            +7 (999) 123-45-67
+          </a>
+          <button class="header__nav-contact-btn">Обратный звонок</button>
+        </div>
+      </nav>
+      <div class="header__content">
+        <div class="header__content-main">
+          <h1 class="header__title">
+            Защитите свой <span class="header__title-icon">авто с помощью</span>
+            надежного навеса!
+          </h1>
+          <button class="header__content-btn">Получить расчет стоимости</button>
+        </div>
+        <div class="header__content-down">
+          <ul class="header__content-facts">
+            <li class="header__content-fact sun">
+              <img
+                src="<%=require('./images/header/weather-sunny.svg')%>"
+                alt="Иконка солнца"
+                class="header__nav-logo-img"
+              />
+              <span class="header__content-fact-gray"
+                >Ваш автомобиль будет защищен от:</span
+              >
+              солнца, дождя и других непогодных условий.
+            </li>
+            <li class="header__content-fact pavilion">
+              <img
+                src="<%=require('./images/header/ancient-pavilion.svg')%>"
+                alt="Иконка павильона"
+                class="header__nav-logo-img"
+              />
+              <span class="header__content-fact-gray">
+                Навесы сохраняют ваш автомобиль
+              </span>
+              в идеальном состоянии
+              <span class="header__content-fact-gray">
+                и придают вашему двору
+              </span>
+              элегантный вид.
+            </li>
+          </ul>
+          <div class="header__content-gallery">
+            <div class="header__content-gallery-top">
+              <h3 class="header__content-gallery-title">Галерея</h3>
+              <button class="header__content-gallery-btn">
+                Посмотреть все
+              </button>
+            </div>
+            <div class="header__content-gallery-scroll">
+              <div class="header__content-gallery-scroll-item">
+                <img
+                  src="<%=require('./images/header/header-gallery-car-01.png')%>"
+                  alt="Фотография навеса"
+                  class="header__content-gallery-scroll-img"
+                />
+              </div>
+              <div class="header__content-gallery-scroll-item">
+                <img
+                  src="<%=require('./images/header/header-gallery-car-02.png')%>"
+                  alt="Фотография навеса"
+                  class="header__content-gallery-scroll-img"
+                />
+              </div>
+              <div class="header__content-gallery-scroll-item">
+                <img
+                  src="<%=require('./images/header/header-gallery-car-03.jpeg')%>"
+                  alt="Фотография навеса"
+                  class="header__content-gallery-scroll-img"
+                />
+              </div>
+              <div class="header__content-gallery-scroll-item">
+                <img
+                  src="<%=require('./images/header/header-gallery-car-04.jpeg')%>"
+                  alt="Фотография навеса"
+                  class="header__content-gallery-scroll-img"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  </body>
 </html>

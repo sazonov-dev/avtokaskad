@@ -1,23 +1,32 @@
-//@font-face {
-//  src:
-//          url(./woff2/TT_Firs_Neue_Regular.woff2) format('woff2'),
-//          url(./woff/TT_Firs_Neue_Regular.woff) format('woff');
-//  font-family: 'TT Firs Neue';
-//  font-weight: 400;
-//}
-//
-//@font-face {
-//  src:
-//          url(./woff2/TT_Firs_Neue_Medium.woff2) format('woff2'),
-//          url(./woff/TT_Firs_Neue_Medium.woff) format('woff');
-//  font-family: 'TT Firs Neue';
-//  font-weight: 500;
-//}
-//
-//@font-face {
-//  src:
-//          url(./woff2/hf-icons-font.woff2) format('woff2'),
-//          url(./woff/hf-icons-font.woff) format('woff');
-//  font-family: 'HF Icons';
-//  font-weight: normal;
-//}
+@font-face {
+  src: url(./woff/HelveticaNeueCyr-Roman.woff) format('woff2'),
+    url(./ttf/HelveticaNeueCyr-Roman.ttf) format('truetype');
+  font-family: 'HelveticaNeueCyr';
+  font-weight: 400;
+}
+
+@font-face {
+  src: url(./woff/HelveticaNeueCyr-Medium.woff) format('woff2'),
+    url(./ttf/HelveticaNeueCyr-Medium.ttf) format('truetype');
+  font-family: 'HelveticaNeueCyr';
+  font-weight: 500;
+}
+
+@font-face {
+  src: url(./woff/HelveticaNeueCyr-Bold.woff) format('woff2'),
+    url(./ttf/HelveticaNeueCyr-Black.ttf) format('truetype');
+  font-family: 'HelveticaNeueCyr';
+  font-weight: 700;
+}
+
+@font-face {
+  src: url(./ttf/sf-ui-display-regular.ttf) format('truetype');
+  font-family: 'SF UI Display';
+  font-weight: 400;
+}
+
+@font-face {
+  src: url(./ttf/sf-ui-display-medium.ttf) format('truetype');
+  font-family: 'SF UI Display';
+  font-weight: 500;
+}
