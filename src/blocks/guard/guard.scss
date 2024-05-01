@@ -1,0 +1,85 @@
+.guard {
+  width: 100%;
+  background: linear-gradient(270deg, #ffdd87 44.21%, #ffdd87 75.7%);
+  padding-left: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .guard__content {
+    max-width: 568px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .guard__content-title {
+      color: #080807;
+      font-family: 'HelveticaNeueCyr', 'Arial', sans-serif;
+      font-size: 48px;
+      font-weight: 550;
+      line-height: 110%; /* 48px */
+      letter-spacing: -0.96px;
+
+      .guard__content-title-badge {
+        color: #fff;
+        padding: 0 15px;
+        border-radius: 20px;
+        background-color: #080807;
+      }
+    }
+
+    .guard__content-info {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+
+      .guard__content-info-description {
+        color: rgba(8, 8, 7, 0.8);
+        font-weight: 500;
+        line-height: 150%; /* 30px */
+        letter-spacing: -0.4px;
+      }
+    }
+
+    .guard__content-btn {
+      margin-top: 32px;
+      color: #fff;
+      font-family: 'HelveticaNeueCyr', 'Arial', sans-serif;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 550;
+      line-height: 115%; /* 20.7px */
+      padding: 15.5px 145.5px;
+      border-radius: 12px;
+      background: #080807;
+      backdrop-filter: blur(12.5px);
+    }
+  }
+
+  .guard__img-container {
+    position: relative;
+    z-index: 1;
+
+    .guard__lock-container {
+      border-radius: 81.526px;
+      border: 1px solid #ffe08d;
+      background: rgba(223, 190, 103, 0.8);
+      backdrop-filter: blur(7.411452770233154px);
+      transform: rotate(2deg);
+      position: absolute;
+      top: 55%;
+      left: 40%;
+    }
+
+    .guard__lock {
+      background-image: url('../../images/guard/lock.svg');
+      width: 44px;
+      height: 44px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      padding: 34px;
+    }
+  }
+}
