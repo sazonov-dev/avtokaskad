@@ -15,6 +15,8 @@
       name="keywords"
       content="автомобильные навесы Москва, навесы для автомобилей Московская область, купить навес для автомобиля, установка автомобильных навесов, цены на навесы для автомобилей, производство автомобильных навесов, строительство автомобильных навесов, алюминиевые навесы для автомобилей, монтаж навесов для автомобилей, автомобильные навесы, автомобильный навес, авто навес, авто навесы, навесы, металлические навесы, навесы москва, навесы московская область, автомобильные навесы на заказ"
     />
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
     <title>
       Автокаскад - защитите свой автомобиль с помощью надежного навеса!
     </title>
@@ -128,7 +130,7 @@
         </div>
       </div>
     </header>
-    <section class="guard">
+    <section class="guard" data-aos="fade-right">
       <div class="guard__content">
         <h2 class="guard__content-title">
           Защитите свой
@@ -157,5 +159,90 @@
         </div>
       </div>
     </section>
+    <section class='advantages' data-aos="fade-down">
+      <div class='advantages__info'>
+        <p class='advantages__info-text'>преимущества</p>
+        <h2 class='advantages__info-title'>Почему выбирают <span class='advantages__info-title-gold'>Автокаскад</span>?</h2>
+      </div>
+      <div class='advantages__content'>
+        <div class='advantages__content-line first-line'>
+          <div class='advantages__content-card style-line line'>
+            <img src="<%=require('./images/advantages/card-icon.svg')%>" alt='Иконка' class='advantages__content-card-icon'>
+            <div class='advantages__content-card-info'>
+              <h3 class='advantages__content-card-info-title'>Стиль и эстетика</h3>
+              <p class='advantages__content-card-info-description'>Мы предлагаем разнообразие <span class='advantages__content-card-info-description-white'>дизайнов</span>, чтобы ваш навес соответствовал стилю <span class='advantages__content-card-info-description-white'>вашего дома</span> и <span class='advantages__content-card-info-description-white'>двора</span>.</p>
+            </div>
+          </div>
+          <div class='advantages__content-card guard-line line'>
+            <img src="<%=require('./images/advantages/guard-icon.svg')%>" alt='Иконка' class='advantages__content-card-icon'>
+            <div class='advantages__content-card-info'>
+              <h3 class='advantages__content-card-info-title'>Прочная защита</h3>
+              <p class='advantages__content-card-info-description'>Навесы изготовлены из <span class='advantages__content-card-info-description-white'>высококачественных материалов</span>, обеспечивая надежную защиту вашего автомобиля  от погоды и ультрафиолетовых лучей.</p>
+            </div>
+          </div>
+        </div>
+        <img src="<%=require('./images/advantages/car.png')%>" alt='Избражение машины под навесом' class='advantages__content-img'>
+        <div class='advantages__content-line second-line'>
+          <div class='advantages__content-card fence-line line'>
+            <img src="<%=require('./images/advantages/fence-icon.svg')%>" alt='Иконка' class='advantages__content-card-icon'>
+            <div class='advantages__content-card-info'>
+              <h3 class='advantages__content-card-info-title'>Простота монтажа</h3>
+              <p class='advantages__content-card-info-description'>Мы предлагаем разнообразие дизайнов, чтобы ваш навес соответствовал стилю вашего дома и двора.</p>
+            </div>
+          </div>
+          <div class='advantages__content-card award-line line'>
+            <img src="<%=require('./images/advantages/award-icon.svg')%>" alt='Иконка' class='advantages__content-card-icon'>
+            <div class='advantages__content-card-info'>
+              <h3 class='advantages__content-card-info-title'>Индивидуальный подход</h3>
+              <p class='advantages__content-card-info-description'>Большой выбор готовых конструкций и возможность выполнять индивидуальные заказы клиентов любой сложности.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class='about' data-aos="fade-up">
+      <div class='about__bg'></div>
+      <div class='about__container'>
+        <div class='about__info'>
+          <p class='about__info-text'>преимущества</p>
+          <h2 class='about__info-title'>О нашей компании</h2>
+          <div class='about__info-description'>
+            <p class='about__info-description-text'>На протяжении 10 лет мы специализируемся на производстве и установке высококачественных автомобильных навесов. Наша компания гордится предлагать клиентам продукцию, которая сочетает в себе инновационные технологии и превосходное качество.</p>
+            <p class='about__info-description-text'>Мы стремимся к тому, чтобы каждый клиент получил надежный и эстетичный навес, который прослужит долгие годы.</p>
+          </div>
+        </div>
+        <div class='about__content'>
+          <div class='about__content-card'>
+            <div class='about__content-card-badge'>
+              <img src="<%=require('./images/about/right-icon.svg')%>" alt='Иконка галки' class='about__content-card-badge-img'>
+              <p class='about__content-card-text'><span class='about__content-card-text-bold'>Индивидуальный подход</span> к каждому клиенту и его потребностям.</p>
+            </div>
+            <img src="<%=require('./images/about/image-01.png')%>" alt='Картинка с навесом' class='about__content-card-img'>
+          </div>
+          <div class='about__content-card'>
+            <div class='about__content-card-badge'>
+              <img src="<%=require('./images/about/right-icon.svg')%>" alt='Иконка галки' class='about__content-card-badge-img'>
+              <p class='about__content-card-text'><span class='about__content-card-text-bold'>Опытные</span> специалисты и мастера с <span class='about__content-card-text-bold'>богатым опытом работы</span>.</p>
+            </div>
+            <img src="<%=require('./images/about/image-02.png')%>" alt='Картинка с навесом' class='about__content-card-img'>
+          </div>
+          <div class='about__content-card'>
+            <div class='about__content-card-badge'>
+              <img src="<%=require('./images/about/right-icon.svg')%>" alt='Иконка галки' class='about__content-card-badge-img'>
+              <p class='about__content-card-text'>Использование только <span class='about__content-card-text-bold'>сертифицированных</span> материалов <span class='about__content-card-text-bold'>высокого качества</span>.</p>
+            </div>
+            <img src="<%=require('./images/about/image-03.png')%>" alt='Картинка с навесом' class='about__content-card-img' style='object-position: center'>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      AOS.init({
+        duration: 950,
+        once: true,
+        mirror: false,
+        easing: 'ease-in-out-back'
+      });
+    </script>
   </body>
 </html>

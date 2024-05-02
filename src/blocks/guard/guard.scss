@@ -1,13 +1,15 @@
 .guard {
-  width: 100%;
+  width: 102%;
   background: linear-gradient(270deg, #ffdd87 44.21%, #ffdd87 75.7%);
   padding-left: 280px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  transform: rotate(-1deg);
 
   .guard__content {
     max-width: 568px;
+    transform: rotate(1deg);
 
     display: flex;
     flex-direction: column;
@@ -54,6 +56,12 @@
       border-radius: 12px;
       background: #080807;
       backdrop-filter: blur(12.5px);
+      max-width: 435px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-sizing: border-box;
+      text-wrap: nowrap;
     }
   }
 
@@ -79,7 +87,7 @@
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
-      padding: 34px;
+      padding: 14px;
     }
 
     .guard__img {

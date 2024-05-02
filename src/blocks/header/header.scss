@@ -215,10 +215,18 @@
           align-items: center;
           gap: 14px;
           width: 100%;
-          overflow: hidden;
           max-width: 830px;
-
+          overflow-x: auto;
+          scroll-behavior: smooth;
+          white-space: nowrap;
+          -webkit-overflow-scrolling: touch;
+          -ms-overflow-style: none;  /* IE and Edge */
+          scrollbar-width: none;  /* Firefox */
           margin-left: auto;
+
+          &::-webkit-scrollbar {
+            display: none;  /* Safari and Chrome */
+          }
 
           .header__content-gallery-scroll-img {
             min-width: 340px;
