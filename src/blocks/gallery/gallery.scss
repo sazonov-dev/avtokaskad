@@ -1,0 +1,56 @@
+.gallery {
+  max-width: 1357px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding-bottom: 121px;
+
+  .gallery__info {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+
+    .gallery__info-text {
+      color: #ffd874;
+      font-family: 'HelveticaNeueCyr', 'Arial', sans-serif;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 550;
+      line-height: 90%; /* 14.4px */
+      letter-spacing: 0.96px;
+      text-transform: uppercase;
+    }
+
+    .gallery__info-title {
+      color: #fff;
+      text-align: center;
+      font-family: 'HelveticaNeueCyr', 'Arial', sans-serif;
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 550;
+      line-height: 100%; /* 48px */
+      letter-spacing: -0.96px;
+    }
+  }
+
+  .gallery__content-img {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Четыре столбца */
+    grid-gap: 14px;
+
+    .gallery__content-card {
+      cursor: pointer;
+      img {
+        border-radius: 10px;
+        height: 214px;
+        object-fit: cover;
+        min-width: 329px;
+      }
+    }
+  }
+}

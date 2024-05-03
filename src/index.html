@@ -25,6 +25,7 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>
       Автокаскад - защитите свой автомобиль с помощью надежного навеса!
     </title>
@@ -43,7 +44,7 @@
           <a href="" class="header__nav-item-link">
             <li class="header__nav-item">О компании</li>
           </a>
-          <a href="" class="header__nav-item-link">
+          <a href="#gallery" class="header__nav-item-link">
             <li class="header__nav-item">Галерея работ</li>
           </a>
           <a href="" class="header__nav-item-link">
@@ -100,9 +101,9 @@
           <div class="header__content-gallery">
             <div class="header__content-gallery-top">
               <h3 class="header__content-gallery-title">Галерея</h3>
-              <button class="header__content-gallery-btn">
+              <a href="#gallery" class="header__content-gallery-btn">
                 Посмотреть все
-              </button>
+              </a>
             </div>
             <div class="header__content-gallery-scroll">
               <div class="header__content-gallery-scroll-item">
@@ -655,23 +656,325 @@
         </div>
       </div>
     </section>
+    <section class="gallery" data-aos="fade-up" id="gallery">
+      <div class="gallery__info">
+        <p class="gallery__info-text">галерея изображений</p>
+        <h2 class="gallery__info-title">Посмотрите наши работы</h2>
+      </div>
+      <div class="gallery__content swiper">
+        <div class="gallery__content-img swiper-wrapper">
+          <div class="gallery__content-card">
+            <img
+              src="<%=require('./images/photos/1.jpeg')%>"
+              alt="Фотография работы"
+            />
+          </div>
+          <div class="gallery__content-card">
+            <img
+              src="<%=require('./images/photos/2.jpeg')%>"
+              alt="Фотография работы"
+            />
+          </div>
+          <div class="gallery__content-card">
+            <img
+              src="<%=require('./images/photos/3.jpeg')%>"
+              alt="Фотография работы"
+            />
+          </div>
+          <div class="gallery__content-card">
+            <img
+              src="<%=require('./images/photos/4.jpeg')%>"
+              alt="Фотография работы"
+            />
+          </div>
+          <div class="gallery__content-card">
+            <img
+              src="<%=require('./images/photos/5.jpeg')%>"
+              alt="Фотография работы"
+            />
+          </div>
+          <div class="gallery__content-card">
+            <img
+              src="<%=require('./images/photos/6.jpeg')%>"
+              alt="Фотография работы"
+            />
+          </div>
+          <div class="gallery__content-card">
+            <img
+              src="<%=require('./images/photos/7.jpeg')%>"
+              alt="Фотография работы"
+            />
+          </div>
+          <div class="gallery__content-card">
+            <img
+              src="<%=require('./images/photos/8.jpeg')%>"
+              alt="Фотография работы"
+            />
+          </div>
+          <div class="gallery__content-card">
+            <img
+              src="<%=require('./images/photos/9.jpeg')%>"
+              alt="Фотография работы"
+            />
+          </div>
+          <div class="gallery__content-card">
+            <img
+              src="<%=require('./images/photos/10.jpeg')%>"
+              alt="Фотография работы"
+            />
+          </div>
+          <div class="gallery__content-card">
+            <img
+              src="<%=require('./images/photos/11.jpeg')%>"
+              alt="Фотография работы"
+            />
+          </div>
+          <div class="gallery__content-card">
+            <img
+              src="<%=require('./images/photos/12.jpeg')%>"
+              alt="Фотография работы"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="order">
+      <div class="order__container">
+        <div class="order__container-content">
+          <div class="order__container-content-info">
+            <h2 class="order__container-content-title">
+              Готовы
+              <span class="order__container-content-title-icon"></span>
+              заказать навес или есть вопросы?
+            </h2>
+            <p class="order__container-content-description">
+              Наши специалисты всегда готовы помочь вам. Свяжитесь с нами прямо
+              сейчас.
+            </p>
+          </div>
+          <form action="" class="order__container-form">
+            <div class="order__container-form-content">
+              <div class="order__container-form-input">
+                <input
+                  type="text"
+                  class="input"
+                  id="name"
+                  placeholder="Ваше имя"
+                />
+              </div>
+              <div class="order__container-form-input phone-container">
+                <img
+                  src="<%=require('./images/order/ru-flag.svg')%>"
+                  alt="ru-icon"
+                />
+                <input
+                  type="text"
+                  class="input"
+                  id="phone"
+                  placeholder="+7 (XXX) XXX-XX-XX"
+                />
+              </div>
+            </div>
+            <button class="order__btn" type="submit">Оставить заявку</button>
+          </form>
+        </div>
+        <img
+          src="<%=require('./images/order/manager-tg.svg')%>"
+          alt=""
+          class="order__container-img"
+        />
+      </div>
+    </section>
+    <section class="doors">
+      <div class="doors__container">
+        <img src="<%=require('./images/doors/door-01.jpeg')%>" alt="Фотография двери" class="doors__container-img left-absolute-img">
+        <img src="<%=require('./images/doors/door-02.jpeg')%>" alt="Фотография двери" class="doors__container-img right-absolute-img">
+        <div class="doors__container-info">
+          <p class="doors__container-info-text">Входные Двери</p>
+          <h2 class="doors__container-info-title">
+            Не только навесы! Изысканные
+            <span class="doors__container-info-title-icon"></span> входные двери
+            для вашего дома
+          </h2>
+          <p class="doors__container-info-description">
+            Мы не только специализируемся на автомобильных навесах, но также
+            предлагаем широкий ассортимент стильных и надежных входных дверей
+            для вашего дома.
+          </p>
+        </div>
+        <section class="about doors__about">
+          <div class="about__container">
+            <div class="about__content">
+              <div class="about__content-card">
+                <div class="about__content-card-badge">
+                  <img
+                    src="<%=require('./images/about/right-icon.svg')%>"
+                    alt="Иконка галки"
+                    class="about__content-card-badge-img"
+                  />
+                  <p class="about__content-card-text">
+                    <span class="about__content-card-text-bold"
+                      >Индивидуальный подход</span
+                    >
+                    к каждому клиенту и его потребностям.
+                  </p>
+                </div>
+                <img
+                  src="<%=require('./images/about/image-01.png')%>"
+                  alt="Картинка с навесом"
+                  class="about__content-card-img"
+                />
+              </div>
+              <div class="about__content-card">
+                <div class="about__content-card-badge">
+                  <img
+                    src="<%=require('./images/about/right-icon.svg')%>"
+                    alt="Иконка галки"
+                    class="about__content-card-badge-img"
+                  />
+                  <p class="about__content-card-text">
+                    <span class="about__content-card-text-bold">Опытные</span>
+                    специалисты и мастера с
+                    <span class="about__content-card-text-bold"
+                      >богатым опытом работы</span
+                    >.
+                  </p>
+                </div>
+                <img
+                  src="<%=require('./images/about/image-02.png')%>"
+                  alt="Картинка с навесом"
+                  class="about__content-card-img"
+                />
+              </div>
+              <div class="about__content-card">
+                <div class="about__content-card-badge">
+                  <img
+                    src="<%=require('./images/about/right-icon.svg')%>"
+                    alt="Иконка галки"
+                    class="about__content-card-badge-img"
+                  />
+                  <p class="about__content-card-text">
+                    Использование только
+                    <span class="about__content-card-text-bold"
+                      >сертифицированных</span
+                    >
+                    материалов
+                    <span class="about__content-card-text-bold"
+                      >высокого качества</span
+                    >.
+                  </p>
+                </div>
+                <img
+                  src="<%=require('./images/about/image-03.png')%>"
+                  alt="Картинка с навесом"
+                  class="about__content-card-img"
+                  style="object-position: center"
+                />
+              </div>
+            </div>
+          </section>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__container-line">
+          <a href="" class="footer__logo-link">
+            <img src="<%=require('./images/footer/logotype.svg')%>" alt="логотип" class="footer__logo-img">
+          </a>
+          <div class="footer__social">
+            <a href="" class="footer__social-link">
+              <img src="<%=require('./images/footer/telegram-icon.svg')%>" alt="" class="footer__social-link-img">
+            </a>
+            <a href="" class="footer__social-link">
+              <img src="<%=require('./images/footer/whatsapp-icon.svg')%>" alt="" class="footer__social-link-img">
+            </a>
+          </div>
+        </div>
+        <div class="footer__container-line">
+          <ul class="footer__nav-items">
+            <a href="" class="footer__nav-item-link">
+              <li class="footer__nav-item">О компании</li>
+            </a>
+            <a href="#gallery" class="footer__nav-item-link">
+              <li class="footer__nav-item">Галерея работ</li>
+            </a>
+            <a href="" class="footer__nav-item-link">
+              <li class="footer__nav-item">Отзывы</li>
+            </a>
+            <a href="" class="footer__nav-item-link">
+              <li class="footer__nav-item">Контакты</li>
+            </a>
+          </ul>
+          <p class="footer__address">г. Москва, ул. Пушкина д.123</p>
+        </div>
+        <div class="footer__container-line">
+          <a href="" class="footer__political">Политика конфеденциальности</a>
+          <p class="footer__copyright">© Автокаскад. Copyright 2024</p>
+        </div>
+      </div>
+    </footer>
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <img id="modal-image" src="" alt="" />
+      </div>
+    </div>
     <script>
       AOS.init({
-        duration: 1900,
+        duration: 1400,
         once: true,
         mirror: false,
         easing: 'ease-in-out-back',
       });
-      const swiper = new Swiper('.swiper', {
-        slidesPerView: 'auto', // Для адаптивного количества слайдов
-        spaceBetween: 30, // Пространство между слайдами
-        centeredSlides: true, // Центрирование слайдов
-        slidesPerGroup: 1,
-        loop: true, // если нужна бесконечная прокрутка
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
+    </script>
+    <script>
+      document.querySelectorAll('.swiper').forEach((element) => {
+        const swiper = new Swiper(element, {
+          slidesPerView: 'auto', // Для адаптивного количества слайдов
+          spaceBetween: 30, // Пространство между слайдами
+          centeredSlides: true, // Центрирование слайдов
+          slidesPerGroup: 1,
+          loop: true, // если нужна бесконечная прокрутка
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        });
+      });
+    </script>
+    <script>
+      // После загрузки документа
+      // После загрузки документа
+      $(document).ready(function () {
+        // Добавляем обработчик события клика на изображения в галерее
+        $('.gallery__content-card img').click(function () {
+          // Получаем URL изображения
+          var imageUrl = $(this).attr('src');
+          // Устанавливаем изображение как src атрибут модального окна
+          $('#modal-image').attr('src', imageUrl);
+          // Отображаем модальное окно
+          $('#modal').css('display', 'block');
+        });
+
+        // Добавляем обработчик события клика на кнопку закрытия модального окна
+        $('.close').click(function () {
+          // Скрываем модальное окно
+          $('#modal').css('display', 'none');
+        });
+
+        // Добавляем обработчик события клика на фон модального окна
+        $('#modal').click(function (event) {
+          if (event.target === this) {
+            $(this).css('display', 'none');
+          }
+        });
+
+        // Добавляем обработчик события нажатия на клавишу Esc
+        $(document).keyup(function (event) {
+          if (event.key === 'Escape') {
+            $('#modal').css('display', 'none');
+          }
+        });
       });
     </script>
   </body>

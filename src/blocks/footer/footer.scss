@@ -1,0 +1,19 @@
+.footer {
+  border-top: 1px solid #dfe1e7;
+  background: #080807;
+  padding: 30px 8px;
+
+  .footer__container-line {
+    max-width: 1360px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .footer__social {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+  }
+}
