@@ -12,4 +12,3 @@ document.addEventListener('DOMContentLoaded', function () {
 
   gallery.addEventListener('wheel', handleWheel);
 });
-
