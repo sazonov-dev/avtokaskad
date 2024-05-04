@@ -123,3 +123,11 @@
     }
   }
 }
+
+@media screen and (max-width: 1600px) {
+  .order {
+    .order__container {
+      max-width: 1280px;
+    }
+  }
+}

@@ -54,3 +54,16 @@
     }
   }
 }
+
+@media screen and (max-width: 1600px) {
+  .gallery {
+    max-width: 1280px;
+    .gallery__content-img {
+      .gallery__content-card {
+        img {
+          min-width: 305px;
+        }
+      }
+    }
+  }
+}

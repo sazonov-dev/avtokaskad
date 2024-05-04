@@ -220,12 +220,12 @@
           scroll-behavior: smooth;
           white-space: nowrap;
           -webkit-overflow-scrolling: touch;
-          -ms-overflow-style: none;  /* IE and Edge */
-          scrollbar-width: none;  /* Firefox */
+          -ms-overflow-style: none; /* IE and Edge */
+          scrollbar-width: none; /* Firefox */
           margin-left: auto;
 
           &::-webkit-scrollbar {
-            display: none;  /* Safari and Chrome */
+            display: none; /* Safari and Chrome */
           }
 
           .header__content-gallery-scroll-img {
@@ -234,6 +234,22 @@
             object-fit: cover;
             border-radius: 18px;
             border: 2px solid rgba(0, 0, 0, 0.25);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .header {
+    .header__content {
+      padding-left: 80px;
+
+      .header__content-down {
+        .header__content-gallery {
+          .header__content-gallery-scroll {
+            max-width: 600px;
           }
         }
       }

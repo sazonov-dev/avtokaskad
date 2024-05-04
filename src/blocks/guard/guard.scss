@@ -6,6 +6,7 @@
   align-items: center;
   justify-content: space-between;
   transform: rotate(-1deg) !important;
+  margin-left: -10px;
 
   .guard__content {
     max-width: 568px;
@@ -93,5 +94,11 @@
     .guard__img {
       max-height: 650px;
     }
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .guard {
+    padding-left: 80px;
   }
 }

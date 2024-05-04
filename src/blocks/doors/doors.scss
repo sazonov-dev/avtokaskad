@@ -99,3 +99,11 @@
     }
   }
 }
+
+@media screen and (max-width: 1600px) {
+  .doors {
+    .doors__container {
+      max-width: 1160px;
+    }
+  }
+}
