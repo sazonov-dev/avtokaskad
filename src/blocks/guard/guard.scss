@@ -129,3 +129,42 @@
     }
   }
 }
+
+@media screen and (max-width: 1000px) {
+  .guard {
+    flex-direction: column;
+    width: 104%;
+    padding-left: 16px;
+
+    .guard__content {
+      max-width: 343px;
+      gap: 18px;
+      padding-top: 70px;
+      margin-bottom: 35px;
+
+      .guard__content-title {
+        font-size: 38px;
+
+        .guard__content-title-badge {
+          padding: 5px 15px;
+        }
+      }
+
+      .guard__content-info {
+        .guard__content-info-description {
+          font-size: 16px;
+        }
+      }
+
+      .guard__content-btn {
+        font-size: 16px;
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+    .guard__img-container {
+      width: 185%;
+    }
+  }
+}
