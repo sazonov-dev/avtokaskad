@@ -67,3 +67,28 @@
     }
   }
 }
+
+@media screen and (max-width: 1340px) {
+  .gallery {
+    max-width: 980px;
+    .gallery__info {
+      .gallery__info-text {
+        font-size: 14px;
+      }
+
+      .gallery__info-title {
+        font-size: 38px;
+      }
+    }
+
+    .gallery__content {
+      .gallery__content-img {
+        .gallery__content-card {
+          img {
+            min-width: 230px;
+          }
+        }
+      }
+    }
+  }
+}

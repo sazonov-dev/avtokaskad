@@ -661,8 +661,8 @@
         <p class="gallery__info-text">галерея изображений</p>
         <h2 class="gallery__info-title">Посмотрите наши работы</h2>
       </div>
-      <div class="gallery__content swiper">
-        <div class="gallery__content-img swiper-wrapper">
+      <div class="gallery__content">
+        <div class="gallery__content-img">
           <div class="gallery__content-card">
             <img
               src="<%=require('./images/photos/1.jpeg')%>"
@@ -926,26 +926,34 @@
       </div>
     </div>
     <script>
-      AOS.init({
-        duration: 1400,
-        once: true,
-        mirror: false,
-        easing: 'ease-in-out-back',
-      });
-    </script>
-    <script>
-      document.querySelectorAll('.swiper').forEach((element) => {
+      document.addEventListener('DOMContentLoaded', () => {
+        document.querySelectorAll('.swiper').forEach((element) => {
         const swiper = new Swiper(element, {
-          slidesPerView: 'auto', // Для адаптивного количества слайдов
-          spaceBetween: 30, // Пространство между слайдами
-          centeredSlides: true, // Центрирование слайдов
-          slidesPerGroup: 1,
+          slidesPerView: 'auto',
+          spaceBetween: 10,
+          centeredSlides: true,
           loop: true, // если нужна бесконечная прокрутка
           navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
           },
+          breakpoints: {
+            768: {
+              slidesPerView: 'auto',
+              spaceBetween: 20,
+              centeredSlides: false,
+            },
+          },
         });
+      });
+      })
+    </script>
+    <script>
+      AOS.init({
+        duration: 1400,
+        once: true,
+        mirror: false,
+        easing: 'ease-in-out-back',
       });
     </script>
     <script>

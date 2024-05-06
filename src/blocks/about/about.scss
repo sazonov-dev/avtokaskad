@@ -125,3 +125,45 @@
     background-repeat: no-repeat;
   }
 }
+
+@media screen and (max-width: 1340px) {
+  .about {
+    .about__container {
+      max-width: 980px;
+      .about__info {
+        gap: 20px;
+        .about__info-text {
+          font-size: 14px;
+        }
+        .about__info-title {
+          font-size: 38px;
+        }
+
+        .about__info-description {
+          max-width: 680px;
+          .about__info-description-text {
+            font-size: 16px;
+          }
+        }
+      }
+
+      .about__content {
+        .about__content-card {
+          max-width: 300px;
+          .about__content-card-badge {
+            gap: 13px;
+
+            .about__content-card-badge-img {
+              width: 30px;
+              height: 30px;
+            }
+
+            .about__content-card-text {
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
