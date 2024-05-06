@@ -3,11 +3,58 @@
   padding-bottom: 76px;
 
   .doors__about {
-    all: unset;
-  }
+    width: 100%;
 
-  .about__content {
-    min-width: 1066px;
+    .doors__about-container {
+      .doors__about-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        .doors__about-content-card {
+          display: flex;
+          flex-direction: column;
+          max-width: 342px;
+          max-height: 300px;
+          min-height: 300px;
+          height: 100%;
+          width: 100%;
+          padding: 18px 20px 0;
+          border-radius: 18px;
+          background: #fff;
+          box-shadow: 0px 3px 32px -1px rgba(0, 0, 0, 0.12);
+          overflow: hidden;
+
+          .doors__about-content-card-badge {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+
+            .doors__about-content-card-text {
+              color: #080a08;
+              font-family: 'HelveticaNeueCyr', 'Arial', sans-serif;
+              font-size: 18px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 136%;
+              letter-spacing: 0.36px;
+
+              .doors__about-content-card-text-bold {
+                font-weight: 500;
+              }
+            }
+          }
+
+          .doors__about-content-card-img {
+            width: 100%;
+            object-fit: cover;
+            object-position: top;
+            margin-top: auto;
+            max-height: 225px;
+          }
+        }
+      }
+    }
   }
 
   .doors__container {
@@ -104,6 +151,55 @@
   .doors {
     .doors__container {
       max-width: 1160px;
+    }
+  }
+}
+
+@media screen and (max-width: 1340px) {
+  .doors {
+    .doors__container {
+      max-width: 800px;
+
+      .doors__container-info {
+        max-width: 500px;
+
+        .doors__container-info-text {
+          font-size: 14px;
+        }
+
+        .doors__container-info-title {
+          font-size: 38px;
+
+          .doors__container-info-title-icon {
+            background-size: cover;
+            height: 38px;
+            width: 38px;
+          }
+        }
+
+        .doors__container-info-description {
+          font-size: 16px;
+        }
+      }
+    }
+
+    .doors__about {
+      .doors__about-container {
+        .doors__about-content {
+          padding: 0 15px;
+          .doors__about-content-card {
+            .doors__about-content-card-badge {
+              .doors__about-content-card-badge-img {
+                width: 30px;
+                object-fit: cover;
+              }
+              .doors__about-content-card-text {
+                font-size: 15px;
+              }
+            }
+          }
+        }
+      }
     }
   }
 }

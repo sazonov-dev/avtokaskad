@@ -131,3 +131,46 @@
     }
   }
 }
+
+@media screen and (max-width: 1340px) {
+  .order {
+    .order__container {
+      max-width: 980px;
+      .order__container-content {
+        min-width: 350px;
+        .order__container-content-info {
+          max-width: 460px;
+          .order__container-content-title {
+            font-size: 38px;
+          }
+          .order__container-content-description {
+            font-size: 16px;
+          }
+        }
+
+        .order__container-form {
+          .order__container-form-content {
+            .order__container-form-input {
+              padding: 16px;
+              .input {
+                font-size: 16px;
+                &::placeholder {
+                  font-size: 16px;
+                }
+              }
+            }
+          }
+
+          .order__btn {
+            font-size: 16px;
+          }
+        }
+      }
+
+      .order__container-img {
+        max-width: 450px;
+        object-fit: cover;
+      }
+    }
+  }
+}
