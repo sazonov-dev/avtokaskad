@@ -203,3 +203,28 @@
     }
   }
 }
+
+@media screen and (max-width: 1000px) {
+  .doors {
+    padding-bottom: 130px;
+    .doors__container {
+      max-width: 343px;
+      .doors__container-img {
+        display: none;
+      }
+      .doors__container-info {
+        .doors__container-info-title {
+          font-weight: 450;
+        }
+      }
+
+      .doors__about {
+        .doors__about-container {
+          .doors__about-content {
+            flex-direction: column;
+          }
+        }
+      }
+    }
+  }
+}

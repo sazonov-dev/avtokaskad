@@ -97,3 +97,28 @@
     }
   }
 }
+
+@media screen and (max-width: 1000px) {
+  .footer {
+    padding: 30px 16px;
+    .footer__container {
+      .footer__container-line {
+        .content {
+          flex-direction: column;
+          max-width: 232px;
+          gap: 40px;
+
+          .footer__political {
+            text-wrap: nowrap;
+          }
+        }
+        .footer__nav-items {
+          margin: 0;
+          padding: 0;
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}

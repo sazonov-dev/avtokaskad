@@ -92,3 +92,22 @@
     }
   }
 }
+
+
+@media screen and (max-width: 1000px) {
+  .gallery {
+    max-width: 343px;
+    padding-bottom: 100px;
+    .gallery__content {
+      .gallery__content-img {
+        grid-template-columns: repeat(2,1fr);
+        .gallery__content-card {
+          img {
+            min-width: 160px;
+            height: 107px;
+          }
+        }
+      }
+    }
+  }
+}

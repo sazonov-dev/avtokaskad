@@ -33,3 +33,11 @@
   right: -40px;
   cursor: pointer;
 }
+
+
+@media screen and (max-width: 768px) {
+  .modal-content {
+    max-width: 310px;
+    width: 100%;
+  }
+}

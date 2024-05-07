@@ -175,3 +175,18 @@
     }
   }
 }
+
+@media screen and (max-width: 1000px) {
+  .order {
+    padding: 100px 0;
+    .order__container {
+      max-width: 343px;
+      flex-direction: column;
+      gap: 60px;
+
+      .order__container-img {
+        width: 100%;
+      }
+    }
+  }
+}
