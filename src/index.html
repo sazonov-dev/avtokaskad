@@ -26,6 +26,10 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/libphonenumber-js/0.4.42/libphonenumber-js.min.js" integrity="sha512-5fM9vV2IoyEJcKl+ji79bZjIg15AOCRk/mheeC4EcBH2gHfjqzXHO/4pBYFHsNxyzQ30v6FdHbrnttblZa0SLw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
     <title>
       Автокаскад - защитите свой автомобиль с помощью надежного навеса!
     </title>
@@ -919,6 +923,48 @@
         <img id="modal-image" src="" alt="" />
       </div>
     </div>
+    <script>
+      const form = document.querySelector('.order__container-form');
+      const nameInput = form.querySelector('#name');
+      const phoneInput = form.querySelector('#phone');
+
+      form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        const name = nameInput.value.trim();
+        const nameRegex = /^[А-ЯЁа-яё\s]+$/;
+
+        if (!nameRegex.test(name) || name.length <= 1) {
+          toastr.warning('Имя должно вводиться на русском языке и содержать больше одного символа.', 'Не правильно введены данные');
+          return;
+        }
+
+        const phone = phoneInput.value.replace(/\D/g, '');
+        if (phone.length < 10) {
+          toastr.warning('Введите корректный российский номер телефона.', 'Не правильно введены данные');
+          return;
+        }
+
+        toastr.options = {
+          "closeButton": true,
+          "debug": false,
+          "newestOnTop": false,
+          "progressBar": true,
+          "positionClass": "toast-top-right",
+          "preventDuplicates": false,
+          "onclick": null,
+          "showDuration": "1000",
+          "hideDuration": "1200",
+          "timeOut": "5000",
+          "extendedTimeOut": "1000",
+          "showEasing": "swing",
+          "hideEasing": "linear",
+          "showMethod": "fadeIn",
+          "hideMethod": "fadeOut"
+        };
+
+        toastr.success('Ваша заявка отправлена оператору, с вами свяжутся в ближайшее время.\nЕсли этого не произошло, позвоните или напишите нам на WhatsApp', 'Успех');
+      });
+    </script>
     <script>
       document.addEventListener('DOMContentLoaded', () => {
         document.querySelectorAll('.swiper').forEach((element) => {
