@@ -9,6 +9,36 @@
     display: flex;
     align-items: center;
     gap: 73px;
+    position: relative;
+
+    .hamburger__mobile {
+      display: none;
+    }
+
+    .header__menu-mobile {
+      height: 0;
+      overflow: hidden;
+      width: 100%;
+      transition: height 0.5s ease;
+      border-radius: 0px 0px 12px 12px;
+      background: #E7E7E7;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      z-index: 99;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .visible {
+      display: block;
+      height: auto;
+      position: absolute;
+      top: 65px;
+      left: 0;
+    }
 
     .header__nav-logo {
       padding: 6px 0 13px 0;
@@ -122,6 +152,10 @@
             top: 0;
           }
         }
+      }
+
+      .hamburger__mobile {
+        display: none;
       }
 
       .header__content-btn {
@@ -350,6 +384,21 @@
   .header {
     .header__nav {
       padding: 13px 16px;
+      gap: unset;
+
+      .hamburger__mobile {
+        display: block;
+        background-image: url("../../images/header/hamburger-icon.svg");
+        width: 20px;
+        height: 19px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-right: 12px;
+      }
+
+      .hamburger__mobile.active {
+        background-image: url("../../images/header/close-union-icon.svg");
+      }
 
       .header__nav-logo {
         padding: 0;
@@ -368,8 +417,54 @@
         }
       }
 
+      .menu-mobile-contact {
+        display: block;
+        .header__nav-contact-phone {
+          color: #080907;
+          font-family: 'HelveticaNeueCyr', 'Arial', sans-serif;
+          font-size: 15px;
+          font-style: normal;
+          font-weight: 550;
+          line-height: 120%; /* 18px */
+          letter-spacing: 0.15px;
+          max-width: 176px;
+          margin: 0 auto;
+          height: 34px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .header__nav-contact-phone::before {
+          background-image: url("../../images/header/phone-black-icon.svg");
+          border: 1px solid rgba(8, 9, 7, 0.25);
+        }
+
+        padding-bottom: 22px;
+      }
+
       .header__nav-items {
         display: none;
+      }
+
+      .menu-mobile-nav {
+        flex-direction: column;
+        gap: 24px;
+        display: flex;
+        padding: 22px 16px 0 16px;
+
+        .header__nav-item-link {
+          margin-right: auto;
+          .header__nav-item {
+            color: #080907;
+            font-family: 'HelveticaNeueCyr', 'Arial', sans-serif;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 115%; /* 17.25px */
+            letter-spacing: 0.3px;
+          }
+        }
       }
     }
 

@@ -37,6 +37,28 @@
   <body class="body">
     <header class="header">
       <nav class="header__nav">
+        <div class='hamburger__mobile' id='hamburger__mobile'></div>
+        <div class='header__menu-mobile hidden' id='header__menu-mobile'>
+          <ul class="header__nav-items menu-mobile-nav">
+            <a href="#about" class="header__nav-item-link">
+              <li class="header__nav-item">О компании</li>
+            </a>
+            <a href="#gallery" class="header__nav-item-link">
+              <li class="header__nav-item">Галерея работ</li>
+            </a>
+            <a href="#review" class="header__nav-item-link">
+              <li class="header__nav-item">Отзывы</li>
+            </a>
+            <a href="#order" class="header__nav-item-link">
+              <li class="header__nav-item">Контакты</li>
+            </a>
+          </ul>
+          <div class="header__nav-contact menu-mobile-contact">
+            <a href="tel:+79991234567" class="header__nav-contact-phone">
+              +7 (999) 123-45-67
+            </a>
+          </div>
+        </div>
         <a href="#" class="header__nav-logo">
           <img
             src="<%=require('./images/logotype.svg')%>"
@@ -45,16 +67,16 @@
           />
         </a>
         <ul class="header__nav-items">
-          <a href="" class="header__nav-item-link">
+          <a href="#about" class="header__nav-item-link">
             <li class="header__nav-item">О компании</li>
           </a>
           <a href="#gallery" class="header__nav-item-link">
             <li class="header__nav-item">Галерея работ</li>
           </a>
-          <a href="" class="header__nav-item-link">
+          <a href="#review" class="header__nav-item-link">
             <li class="header__nav-item">Отзывы</li>
           </a>
-          <a href="" class="header__nav-item-link">
+          <a href="#order" class="header__nav-item-link">
             <li class="header__nav-item">Контакты</li>
           </a>
         </ul>
@@ -62,7 +84,7 @@
           <a href="tel:+79991234567" class="header__nav-contact-phone">
             +7 (999) 123-45-67
           </a>
-          <button class="header__nav-contact-btn">Обратный звонок</button>
+          <a href='#order' class="header__nav-contact-btn">Обратный звонок</a>
         </div>
       </nav>
       <div class="header__content">
@@ -71,7 +93,7 @@
             Защитите свой <span class="header__title-icon">авто с помощью</span>
             надежного навеса!
           </h1>
-          <button class="header__content-btn">Получить расчет стоимости</button>
+          <a href='#order' class="header__content-btn">Получить расчет стоимости</a>
         </div>
         <div class="header__content-down">
           <ul class="header__content-facts">
@@ -159,7 +181,7 @@
             нескольких часов.
           </p>
         </div>
-        <button class="guard__content-btn">Оставить заявку</button>
+        <a href='#order' class="guard__content-btn">Оставить заявку</a>
       </div>
       <div class="guard__img-container">
         <img
@@ -168,7 +190,9 @@
           class="guard__img"
         />
         <div class="guard__lock-container">
-          <button class="guard__lock"></button>
+          <a href='#order'>
+            <button class="guard__lock"></button>
+          </a>
         </div>
       </div>
     </section>
@@ -268,7 +292,7 @@
         </div>
       </div>
     </section>
-    <section class="about" data-aos="fade-up">
+    <section class="about" data-aos="fade-up" id='about'>
       <div class="about__bg"></div>
       <div class="about__container">
         <div class="about__info">
@@ -357,7 +381,7 @@
         </div>
       </div>
     </section>
-    <section class="review" data-aos="fade-right">
+    <section class="review" data-aos="fade-right" id='review'>
       <div class="review__info">
         <p class="review__info-text">отзывы</p>
         <h2 class="review__info-title">Что о нас говорят?</h2>
@@ -634,7 +658,7 @@
         </div>
       </div>
     </section>
-    <section class="order">
+    <section class="order" id='order'>
       <div class="order__container">
         <div class="order__container-content">
           <div class="order__container-content-info">
@@ -786,16 +810,16 @@
         <div class="footer__container-line line-center">
           <div class="content">
             <ul class="footer__nav-items">
-              <a href="" class="footer__nav-item-link">
+              <a href="#about" class="footer__nav-item-link">
                 <li class="footer__nav-item">О компании</li>
               </a>
               <a href="#gallery" class="footer__nav-item-link">
                 <li class="footer__nav-item">Галерея работ</li>
               </a>
-              <a href="" class="footer__nav-item-link">
+              <a href="#review" class="footer__nav-item-link">
                 <li class="footer__nav-item">Отзывы</li>
               </a>
-              <a href="" class="footer__nav-item-link">
+              <a href="#order" class="footer__nav-item-link">
                 <li class="footer__nav-item">Контакты</li>
               </a>
             </ul>
@@ -804,7 +828,6 @@
         </div>
         <div class="footer__container-line">
           <div class="content">
-            <a href="" class="footer__political">Политика конфеденциальности</a>
             <p class="footer__copyright">© Автокаскад. Copyright 2024</p>
           </div>
         </div>
@@ -816,6 +839,29 @@
         <img id="modal-image" src="" alt="" />
       </div>
     </div>
+    <script>
+      document.getElementById('hamburger__mobile').addEventListener('click', function() {
+        const menu = document.getElementById('header__menu-mobile');
+        const hamburger = document.getElementById('hamburger__mobile');
+
+        if (menu.classList.contains('hidden')) {
+          menu.classList.remove('hidden');
+          requestAnimationFrame(() => {
+            menu.classList.add('visible');
+            hamburger.classList.add('active');
+            menu.style.height = menu.scrollHeight + "px";
+          });
+        } else {
+          menu.style.height = "0px";
+          hamburger.classList.remove('active')
+          menu.addEventListener('transitionend', function() {
+            menu.classList.remove('visible');
+            menu.classList.add('hidden');
+          }, { once: true });
+        }
+      });
+
+    </script>
     <script>
       const form = document.querySelector('.order__container-form');
       const nameInput = form.querySelector('#name');
