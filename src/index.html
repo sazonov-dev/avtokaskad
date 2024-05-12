@@ -15,6 +15,7 @@
       name="keywords"
       content="автомобильные навесы Москва, навесы для автомобилей Московская область, купить навес для автомобиля, установка автомобильных навесов, цены на навесы для автомобилей, производство автомобильных навесов, строительство автомобильных навесов, алюминиевые навесы для автомобилей, монтаж навесов для автомобилей, автомобильные навесы, автомобильный навес, авто навес, авто навесы, навесы, металлические навесы, навесы москва, навесы московская область, автомобильные навесы на заказ"
     />
+    <link rel="icon" href="./favicon.svg" sizes="any" type="image/svg+xml">
     <link
       href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css"
       rel="stylesheet"
@@ -23,13 +24,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/libphonenumber-js/0.4.42/libphonenumber-js.min.js" integrity="sha512-5fM9vV2IoyEJcKl+ji79bZjIg15AOCRk/mheeC4EcBH2gHfjqzXHO/4pBYFHsNxyzQ30v6FdHbrnttblZa0SLw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
     <title>
       Автокаскад - защитите свой автомобиль с помощью надежного навеса!
     </title>
@@ -165,34 +160,36 @@
         </div>
       </div>
     </header>
-    <section class="guard" data-aos="fade-right">
-      <div class="guard__content">
-        <h2 class="guard__content-title">
-          Защитите свой
-          <span class="guard__content-title-badge">автомобиль</span> сегодня
-        </h2>
-        <div class="guard__content-info">
-          <p class="guard__content-info-description">
-            Не оставляйте свой автомобиль на произвол судьбы! Закажите наш
-            автомобильный навес прямо сейчас и обеспечьте ему надежную защиту.
-          </p>
-          <p class="guard__content-info-description">
-            Оставьте заявку и наши специалисты свяжутся с вами в течение
-            нескольких часов.
-          </p>
+    <section class='guard__container' data-aos="fade-right">
+      <div class="guard">
+        <div class="guard__content">
+          <h2 class="guard__content-title">
+            Защитите свой
+            <span class="guard__content-title-badge">автомобиль</span> сегодня
+          </h2>
+          <div class="guard__content-info">
+            <p class="guard__content-info-description">
+              Не оставляйте свой автомобиль на произвол судьбы! Закажите наш
+              автомобильный навес прямо сейчас и обеспечьте ему надежную защиту.
+            </p>
+            <p class="guard__content-info-description">
+              Оставьте заявку и наши специалисты свяжутся с вами в течение
+              нескольких часов.
+            </p>
+          </div>
+          <a href='#order' class="guard__content-btn">Оставить заявку</a>
         </div>
-        <a href='#order' class="guard__content-btn">Оставить заявку</a>
-      </div>
-      <div class="guard__img-container">
-        <img
-          src="<%=require('./images/guard/guard.png')%>"
-          alt="Картинка навеса"
-          class="guard__img"
-        />
-        <div class="guard__lock-container">
-          <a href='#order'>
-            <button class="guard__lock"></button>
-          </a>
+        <div class="guard__img-container">
+          <img
+            src="<%=require('./images/guard/guard.png')%>"
+            alt="Картинка навеса"
+            class="guard__img"
+          />
+          <div class="guard__lock-container">
+            <a href='#order'>
+              <button class="guard__lock"></button>
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -839,6 +836,11 @@
         <img id="modal-image" src="" alt="" />
       </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/libphonenumber-js/0.4.42/libphonenumber-js.min.js" integrity="sha512-5fM9vV2IoyEJcKl+ji79bZjIg15AOCRk/mheeC4EcBH2gHfjqzXHO/4pBYFHsNxyzQ30v6FdHbrnttblZa0SLw==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js" defer></script>
     <script>
       document.getElementById('hamburger__mobile').addEventListener('click', function() {
         const menu = document.getElementById('header__menu-mobile');
