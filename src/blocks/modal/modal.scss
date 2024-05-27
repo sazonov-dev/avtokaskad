@@ -39,5 +39,11 @@
   .modal-content {
     max-width: 310px;
     width: 100%;
+
+    .close {
+      top: -55px;
+      right: -5px;
+      font-size: 40px;
+    }
   }
 }

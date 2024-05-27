@@ -406,14 +406,18 @@
       }
 
       .header__nav-contact {
+        margin-top: auto;
         .header__nav-contact-phone {
-          display: none;
+          &::before {
+            display: none;
+          }
         }
 
         .header__nav-contact-btn {
           font-size: 13px;
           padding: 12px 12px;
           font-weight: 450;
+          display: none;
         }
       }
 

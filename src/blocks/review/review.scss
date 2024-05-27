@@ -384,14 +384,20 @@
 @media screen and (max-width: 1000px) {
   .review {
     padding: 100px 0 80px 0;
-    max-width: 343px;
+    max-width: 320px;
 
     &::after {
       margin: 0;
     }
 
+    .review__info {
+      .review__info-title {
+        font-size: 35px;
+      }
+    }
+
     .review__static {
-      max-width: 343px;
+      max-width: 320px;
       gap: 40px;
 
       .review__static-card {
@@ -405,12 +411,19 @@
         .review__static-photos {
           flex-direction: column;
           gap: 12px;
+          max-width: 100%;
+
+          .big-img {
+            max-width: 100%;
+
+            min-width: unset;
+          }
           .review__static-photos-small {
             flex-direction: row;
             gap: 12px;
 
             .review__static-card-img {
-              max-width: 160px;
+              max-width: 48%;
             }
           }
         }
